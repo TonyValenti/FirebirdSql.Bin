@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\__Shared\Shared.props" />
+
+	<PropertyGroup>
+		<PackageId>Firebird.Data.Version3.win-x64</PackageId>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+</Project>

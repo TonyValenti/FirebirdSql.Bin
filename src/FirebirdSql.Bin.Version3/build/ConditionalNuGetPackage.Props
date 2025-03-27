@@ -1,0 +1,10 @@
+<Project>
+  
+	<ItemGroup>
+		<ProjectReference Condition="'$(RuntimeIdentifier)' == 'win-x86'" Include="..\Firebird.Data.Version3.win-x86\Firebird.Data.Version3.win-x86.csproj" />
+		<ProjectReference Condition="'$(RuntimeIdentifier)' == 'win-x64'" Include="..\Firebird.Data.Version3.win-x64\Firebird.Data.Version3.win-x64.csproj" />
+		<ProjectReference Condition="'$(RuntimeIdentifier)' == 'linux-x86'" Include="..\Firebird.Data.Version3.linux-x86\Firebird.Data.Version3.linux-x86.csproj" />
+		<ProjectReference Condition="'$(RuntimeIdentifier)' == 'linux-x64'" Include="..\Firebird.Data.Version3.linux-x64\Firebird.Data.Version3.linux-x64.csproj" />
+	</ItemGroup>
+	
+</Project>

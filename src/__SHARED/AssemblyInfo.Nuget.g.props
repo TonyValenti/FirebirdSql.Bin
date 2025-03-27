@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <AssemblyVersion>25.03.19.1551</AssemblyVersion>
+    <FileVersion>25.03.19.1551</FileVersion>
+    <Version>25.03.19.1551</Version>
+  </PropertyGroup>
+</Project>
+

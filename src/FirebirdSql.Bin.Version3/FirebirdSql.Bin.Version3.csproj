@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\__Shared\Shared.props" />
+
+	<PropertyGroup>
+		<PackageId>Firebird.Data.Version3</PackageId>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		
+		<RuntimeIdentifiers>win-x86;win-x64;linux-x86;linux-x64;</RuntimeIdentifiers>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="build\ConditionalNuGetPackage.props">
+		<Pack>true</Pack>
+		<PackagePath>build\</PackagePath>
+	  </Content>
+	</ItemGroup>
+	
+
+	<ItemGroup>
+		<ProjectReference Condition="'$(RuntimeIdentifier)' == 'win-x86'" Include="..\Firebird.Data.Version3.win-x86\Firebird.Data.Version3.win-x86.csproj" />
+		<ProjectReference Condition="'$(RuntimeIdentifier)' == 'win-x64'" Include="..\Firebird.Data.Version3.win-x64\Firebird.Data.Version3.win-x64.csproj" />
+		<ProjectReference Condition="'$(RuntimeIdentifier)' == 'linux-x86'" Include="..\Firebird.Data.Version3.linux-x86\Firebird.Data.Version3.linux-x86.csproj" />
+		<ProjectReference Condition="'$(RuntimeIdentifier)' == 'linux-x64'" Include="..\Firebird.Data.Version3.linux-x64\Firebird.Data.Version3.linux-x64.csproj" />
+	</ItemGroup>
+	
+		
+	<ItemGroup Condition="'$(RuntimeIdentifier)' == 'win-x86'">
+		<ProjectReference Include="..\Firebird.Data.Version3.win-x86\Firebird.Data.Version3.win-x86.csproj" />
+	</ItemGroup>
+	
+	<ItemGroup Condition="'$(RuntimeIdentifier)' == 'win-x64'">
+		<ProjectReference Include="..\Firebird.Data.Version3.win-x64\Firebird.Data.Version3.win-x64.csproj" />
+	</ItemGroup>
+	
+	<ItemGroup Condition="'$(RuntimeIdentifier)' == 'linux-x86'">
+		<ProjectReference Include="..\Firebird.Data.Version3.linux-x86\Firebird.Data.Version3.linux-x86.csproj" />
+	</ItemGroup>
+	
+	<ItemGroup Condition="'$(RuntimeIdentifier)' == 'linux-x64'">
+		<ProjectReference Include="..\Firebird.Data.Version3.linux-x64\Firebird.Data.Version3.linux-x64.csproj" />
+	</ItemGroup>
+
+
+</Project>

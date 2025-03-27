@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\__Shared\Shared.props" />
+
+	<PropertyGroup>
+		<PackageId>Firebird.Data.Version4.linux-x86</PackageId>
+		<RuntimeIdentifier>linux-x86</RuntimeIdentifier>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+</Project>
